@@ -1,0 +1,47 @@
+button#js-startTimer {
+    background: transparent;
+    border-radius: 6px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+    width: max-content;
+    padding: 8px 20px;
+    text-decoration: auto;
+    cursor: pointer;
+    border: 1px solid rgba(173, 176, 178, 1);
+}
+
+p.countdown--timer {/* Body M */
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+/* identical to box height, or 129% */
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+
+/* Mid Gray 2 */
+    color: #ADB2B3;
+
+
+/* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  grid-gap:3px;
+  width:max-content;
+}
+
+
+
+
+
+
+

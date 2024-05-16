@@ -1,0 +1,69 @@
+.KJI_main--start_block.KJI_main--block.background--white.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+button.button--primary_orange {
+    background: rgba(240, 94, 34, 1);
+    color: white;
+    border-radius: 6px;
+    border: 0;
+    width: max-content;
+    height: max-content;
+    padding: 11px 16px;
+    cursor: pointer;
+}
+
+.KJI_main--start_block--title {
+    flex-basis: 71%;
+}
+
+h3.KJI_main--start_block--title_text {
+    font-family: Ubuntu;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30.8px;
+    text-align: left;
+}
+
+.KJI_main--block.background--white.KJI_statements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p.KJI_statements_texts {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 14px;
+}
+
+.KJI_statements_info {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+p.KJI_main--text--grey {
+    color: grey;
+    color: rgba(122, 126, 129, 1);
+    font-size: 14px;
+}
+
+span.KJI_statements--status {
+    font-size: 12px;
+    border-radius: 40px;
+    padding: 4px 12px;
+    height: max-content;
+    display: flex;
+    gap: 4px;
+}
+
+span.KJI_statements--status.red {
+    background: red;
+    padding: 4px 12px;
+    color: white;
+    border-radius: 40px;
+}

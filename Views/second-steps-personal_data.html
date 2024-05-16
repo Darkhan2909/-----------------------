@@ -1,0 +1,98 @@
+
+<div class="KJI_main--block background--white">
+    <h3 class="KJI_main--text">Предоставление согласия</h3>
+    <div class="KJI_main--block background--green d-flex">
+        <img src="/Images/FAQ.svg" alt="">
+        <div class="KJI_main--greenblock">
+            <h3>Обратите внимание!</h3>
+            <p>На ваш номер телефона +7 700 *** ** 00 отправлен SMS запрос, на получение согласия и обработку персональных данных из Государственной базы данных, на которое вам необходимо будет ответить. После подтвержения SMS, для полождения процесса, нажмите кнопку “Я подтвердил”. Если SMS не пришло в течении 5 минут, просим повторно отправить запрос.</p>
+        </div>
+    </div>
+    <div class="KJI_main--block-buttons">
+        <div class="countdown--block">
+            <p class="countdown--timer">
+                <span>Отправить запрос повторно через</span> <span class="js-timeout">00:05</span>.
+            </p>
+
+            <button onclick="StartTimerfunction()" id="js-startTimer" style="display:none;">Отправить запрос повторно</button>
+        </div>
+        <button class="KJI_main--block-buttons button--primary">Я  Подтвердил (-а)</button>
+    </div>
+</div>
+
+<div class="KJI_main--block background--white">
+    <h3 class="KJI_main--text">Предоставление согласия</h3>
+    <div class="KJI_main--block background--red d-flex">
+        <img src="/Images/cancel--red.svg" alt="">
+        <div class="KJI_main--redblock">
+            <p>Номер не соответствует номеру телефона, указанному в ?????. Изменить номер телефона возможно через Портал Электронного правительства или через мобильное приложение Egov.</p>
+        </div>
+    </div>
+    <div class="KJI_main--block-buttons">
+        <button class="KJI_main--block-buttons button--primary">Завершить</button>
+    </div>
+</div>
+
+<div class="KJI_main--block background--white">
+    <h3 class="KJI_main--text">Данные Заявителя</h3>
+    <p class="KJI_main--text--grey">Обработка данных. Пожалуйста подождите...</p>
+    <div class="KJI_main--refresh-block">
+        <p class="KJI_main--text--green">Идёт запрос в государственные базы данных</p>
+        <button class="KJI_main--refresh-block--button">
+            <img src="/Images/Refresh.svg" alt="">
+            Обновить
+        </button>
+    </div>
+</div>
+
+
+<div class="KJI_main--block background--white">
+    <h3 class="KJI_main--text">Данные Заявителя</h3>
+    <div class="KJI_main--block background--yellow d-flex">
+        <div class="KJI_main--yellowblock">
+            <img src="/Images/Attention.svg" alt="">
+            <p class="KJI_main--yellowblock">Если данные не совпадают просим обратиться в <a href="">egov.kz</a> для актуализации данных.</p>
+        </div>
+        <img src="/Images/Close.svg" alt="">
+    </div>
+    <div class="KJI_main--block background--grey">
+
+        <img src="/Images/People.svg" alt="">
+        <ul>
+            <li><h3>ФИО:</h3><p>Жумажан Жанна Бериковна </p></li>
+            <li><h3>ИИН:</h3><p>Восточно-Казахстанская область</p></li>
+            <li><h3>Город:</h3><p>Усть-Каменогорск</p></li>
+            <li><h3>Область:</h3><p>Восточно-Казахстанская область</p></li>
+        </ul>
+    </div>
+    
+    <div class="KJI_main--agree-block">
+        <label class="checkbox--container" onclick="ValidationAgree()">
+            <p>Ознакомлен/-на и Согласен/-на с Условиями участия в программе «Концепция - Регионы»</p>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+    </div>
+
+
+    <div class="KJI_main--block-buttons">
+        
+
+        <button id="js-startTimer">Назад</button>
+        
+        <button class="button--primary" id="SecondSteps" disabled>Продолжить</button>
+    </div>
+
+</div>
+<script>
+    function ValidationAgree(){
+        var inputagree = $(".checkbox--container").find("input")
+        if(inputagree.is(':checked')){
+            $("#SecondSteps").prop('disabled', false);
+        }
+        else{
+            
+            $("#SecondSteps").prop('disabled', true);
+        }
+    }
+</script>

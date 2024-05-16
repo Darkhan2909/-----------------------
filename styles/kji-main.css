@@ -1,0 +1,162 @@
+.KJI_main--block {
+    border-radius: 8px;
+    display: grid;
+    gap: 13px;
+    padding: 21px;
+}
+
+.background--white {
+    background: white;
+}
+a{
+    text-decoration: none;
+    color: rgba(44, 53, 55, 1);
+}
+.KJI_main {
+    display: grid;
+    gap: 21px;
+}
+.KJI_main--startblock {
+    display: grid;
+    gap: 21px;
+}
+.KJI_main * {
+    /* styleName: Body L; */
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+    margin: 0px;
+    
+    color: rgba(44, 53, 55, 1);
+}
+
+.KJI_main--block.background--grey {
+    background: #F5F6F8;
+}
+button.button--primary {
+    background: teal;
+    color: white;
+    border: 0;
+    border-radius: 6px;
+    width: max-content;
+    padding: 7px 17px;
+    cursor: pointer;
+    justify-self: end;
+}
+.KJI_main-container {
+    display: grid;
+    gap: 21px;
+}
+
+.KJI_main--title {
+    display: grid;
+    gap: 4px;
+}
+
+.KJI_main--title p.KJI_main--text {
+    font-family: Ubuntu;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    color: rgba(122, 126, 129, 1);
+}
+
+.KJI_main--title h3.KJI_main--text {
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.4px;
+    text-align: left;
+}
+
+
+
+
+button.button--primary[disabled] {
+    background: rgba(209, 212, 215, 1);
+    color: rgba(122, 126, 129, 1);
+    cursor: auto;
+}
+.KJI_main--block.background--green.d-flex {
+    display: flex;
+    align-items: flex-start;
+}
+
+.background--green {
+    background: rgba(231, 245, 238, 1);
+}
+
+.KJI_main--block-buttons {
+    display: flex;
+    height: max-content;
+    justify-content: flex-end;
+    gap: 21px;
+    align-items: center;
+}
+.KJI_main-container_steps {
+    display: grid;
+    gap: 21px;
+}
+
+.KJI_main--refresh-block {
+    display: flex;
+    gap: 21px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button.KJI_main--refresh-block--button {
+    border: 1px solid rgba(8, 86, 177, 1);
+    width: max-content;
+    height: max-content;
+    padding: 6px 20px;
+    border-radius: 6px;
+    background: transparent;
+    color: rgba(8, 86, 177, 1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+p.KJI_main--text--green {
+    font-size: 14px;
+    color: teal;
+}
+.KJI_main--block.background--red.d-flex {
+    border: 1px solid rgba(237, 58, 50, 1);
+    background: rgba(255, 239, 238, 1);
+    display: flex;
+    align-items: flex-start;
+}
+.KJI_main--block.background--yellow.d-flex {
+    display: flex;
+    width: 94.7%;
+    justify-content: space-between;
+    border: 1px solid rgba(255, 199, 0, 1);
+    background: rgba(255, 249, 229, 1);
+}
+
+.KJI_main--yellowblock {
+    display: flex;
+    gap: 7px;
+}
+
+.KJI_main--yellowblock p {
+    width: 100%;
+    font-size: 14px;
+}
+
+.KJI_main--block.background--grey ul li {
+    display: flex;
+    gap: 13px;
+}
+
+.KJI_main--block.background--grey {display: flex;align-items: flex-start;}
+
+.KJI_main--block.background--grey ul {
+    padding: 0;
+}

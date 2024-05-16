@@ -1,0 +1,51 @@
+<div class="KJI_main_start_state">
+    <!-- Tab items -->
+    <div class="tabs">
+      <div class="tab-item active">
+        <i class="tab-icon fas fa-code"></i>
+        Активные
+      </div>
+      <div class="tab-item">
+        <i class="tab-icon fas fa-plus-circle"></i>
+        Архив
+      </div>
+      <div class="line"></div>
+    </div>
+  
+    <!-- Tab content -->
+    <div class="tab-content">
+      <div class="tab-pane active">
+        <div class="KJI_main--startblock">          
+            <p class="KJI_main--text--grey">У вас нет активных зявлений по программе</p>
+            <div class="KJI_main--start_block KJI_main--block background--white d-flex">
+                <div class="KJI_main--start_block--title">
+                    <h3 class="KJI_main--start_block--title_text">Концепция - Регионы</h3>
+                    <p class="KJI_main--start_block--title_text">Реализации жилья путем прямых продаж в рамках Концепциии развития жилищно-коммунальной инфраструктуры</p>
+                </div>
+                <button class="button--primary_orange" id="Startstate">Подать заявку</button>
+            </div>
+        </div>
+      </div>
+      <div class="tab-pane">
+        <a href="">         
+            <div class="KJI_main--block background--white KJI_statements">
+                <p class="KJI_statements_texts"><img src="/Images/Document.svg" alt="">Заявление: №12345678</p>
+                <div class="KJI_statements_info">
+                    <p class="KJI_main--text--grey">16.05.2023</p>
+                    <span class="KJI_statements--status red"><img src="/Images/cancel.svg" alt="">Аннулировано</span>
+                </div>
+            </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+        $("#Startstate").on('click', function(){
+            StartSteps();
+        })
+    });
+  </script>
+  
+  <script src="scripts/tabs.js"></script>
