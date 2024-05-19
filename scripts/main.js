@@ -63,3 +63,18 @@ function SecondSteps(){
         }
     });
 }
+function ThirdSteps(){
+    // Загружаем содержимое страницы home.html и отображаем его в main-content
+    $.ajax({
+        url: 'Views/third-steps-changes-deposits.html', // Путь к файлу home.html
+        type: 'GET',
+        dataType: 'html',
+        success: function(response) {
+            $('.KJI_main-container_steps').empty();
+            $('.KJI_main-container_steps').html(response);
+        },
+        error: function(xhr, status, error) {
+            console.error('Error loading page:', error);
+        }
+    });
+}
