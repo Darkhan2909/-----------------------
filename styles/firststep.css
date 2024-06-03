@@ -67,3 +67,16 @@ span.KJI_statements--status.red {
     color: white;
     border-radius: 40px;
 }
+div.KJI_main--block.background--yellow.d-flex {
+    width: 100%;
+}
+
+
+.KJI_main--block.background--yellow.d-flex img {
+    width: 2.6%;
+    cursor: pointer;
+}
+
+.main-container.KJI_main.KJI_main_tabs button {
+    height: 49px;
+}
