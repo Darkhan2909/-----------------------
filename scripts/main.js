@@ -78,3 +78,18 @@ function ThirdSteps(){
         }
     });
 }
+function CancelModal(){
+    // Загружаем содержимое страницы home.html и отображаем его в main-content
+    $.ajax({
+        url: 'Views/CancelModal.html', // Путь к файлу home.html
+        type: 'GET',
+        dataType: 'html',
+        success: function(response) {
+            $('.CancelModal').empty();
+            $('.CancelModal').html(response);
+        },
+        error: function(xhr, status, error) {
+            console.error('Error loading page:', error);
+        }
+    });
+}

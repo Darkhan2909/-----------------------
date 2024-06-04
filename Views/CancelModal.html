@@ -1,0 +1,44 @@
+
+<div class="KJI-modal--cancel-overlay" id="modalOverlay">
+    <div class="KJI-modal--cancel-container">
+        <div class="KJI-modal--cancel-header">
+            <h2>Подтверждение аннулирования заявления</h2>
+            <button class="KJI-modal--cancel-close" id="closeModal">&times;</button>
+        </div>
+        <div class="KJI-modal--cancel-body">
+            <p><strong>АО “Отбасы Банк“</strong></p>
+            <p><strong>Заявление от отказе от участия в программе “Концепция - Регионы”</strong></p>
+            <p>Заявитель: Cherryov NurRoy Jaredovich, 871111302181</p>
+            <p>03.06.2024</p>
+            <p>
+                В связи с моим отказом от участия в программе «Концепция - Регионы» прошу аннулировать Заявление на участие в программе «Жилье для Дольщиков» №0220242977000001533 от 03.06.2024
+            </p>
+            <p>
+                Каких-либо претензий к Банку в связи с аннулированием указанного заявления не имею и в дальнейшем иметь не буду.
+            </p>
+        </div>
+        <div class="KJI-modal--cancel-footer">
+            <button class="KJI-modal--cancel-download">Скачать</button>
+            <button class="KJI-modal--cancel-">Аннулировать</button>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    $(document).ready(function() {
+    const $modalOverlay = $('.KJI-modal--cancel-overlay');
+    const $closeModal = $('.KJI-modal--cancel-close');
+
+    $closeModal.on('click', function() {
+        $modalOverlay.hide();
+    });
+
+    $(window).on('click', function(e) {
+        if ($(e.target).is($modalOverlay)) {
+            $modalOverlay.hide();
+        }
+    });
+});
+</script>
